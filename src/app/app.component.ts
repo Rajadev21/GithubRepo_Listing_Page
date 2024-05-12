@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { GithubAppComponent } from './components/github-app/github-app.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,GithubAppComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

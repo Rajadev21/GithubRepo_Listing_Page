@@ -1,0 +1,23 @@
+
+<div class="card mt-3">
+    <div class="card-header">
+        
+        <h3 class="text-center text-primary">Github Repositories</h3>
+        
+    </div>
+    
+    <div class="card-body">
+        @for(repo of githubRepo;track "id")
+        {
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+                <a [href]="repo.html_url" class="text-primary font-weight-bold" target="_blank">{{repo.name}}</a>
+                <span class="badge rounded-pill bg-success m-2 p-1 ">{{repo.stargazers_count}} Stars</span>
+                <span class="badge rounded-pill bg-success m-2 p-1 ">{{repo.watchers_count}} Stars</span>
+            </li>
+        </ul>
+        }
+    </div>
+    
+</div>
+
